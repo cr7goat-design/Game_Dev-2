@@ -13,9 +13,11 @@ while run:
         if event.type == pygame.QUIT: 
             run = False  
     pygame.display.update() 
-    path = r "C:\Users\lenovo\OneDrive - rutlish.merton.sch.uk\Desktop\Game Dev 2/BD card/Birthdaycardthree.jpg"
-    img = pygame.image.load(path) 
-
+    #path = r "C:\Users\lenovo\OneDrive - rutlish.merton.sch.uk\Desktop\Game Dev 2/BD card/Birthdaycardthree.jpg"
+    #img = pygame.image.load(path) 
+    #img = pygame.image.load("C:\Users\lenovo\OneDrive - rutlish.merton.sch.uk\Desktop\Game Dev 2\BD card\Birthdaycardone.jpg")
+    
+    img = pygame.image.load(r"Game Dev 2\BD card\Birthdaycardone.jpg")
     image = pygame.transform.scale(img, (WIDTH,HEIGHT)) 
     font = pygame.font.SysFont("Times New Roman",72) 
     text = font.render("Happy",True,(0,255,0),'yellow') 
@@ -27,11 +29,20 @@ while run:
     pygame.display.update() 
     time.sleep(2) 
  
-    image2= pygame.image.load("C:\Users\lenovo\OneDrive - rutlish.merton.sch.uk\Desktop\Game Dev 2\BD card\Birthday card 2.jpg")
+    #image2= pygame.image.load("C:\Users\lenovo\OneDrive - rutlish.merton.sch.uk\Desktop\Game Dev 2\BD card\Birthdaycardtwo.jpg")
+    image2= pygame.image.load(r"Game Dev 2\BD card\Birthdaycardtwo.jpg")
     font2= pygame.font.SysFont("Arial", 40) 
     text3= font.render("Thank you very much for everything that you have given me.",True,(128,0,128)) 
     screen.fill((120,45,126)) 
     screen.blit(image2,(0,0))
     screen.blit(text3,(220,110)) 
+    pygame.display.update() 
+    time.sleep(2) 
+
+
+    #image3= pygame.image.load("C:\Users\lenovo\OneDrive - rutlish.merton.sch.uk\Desktop\Game Dev 2\BD card\Birthdaycardthree.jpg")
+    image3= pygame.image.load(r"Game Dev 2\BD card\Birthdaycardthree.jpg")
+    screen.fill((120,45,126)) 
+    screen.blit(image3,(0,0)) 
     pygame.display.update() 
     time.sleep(2) 
